@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: radial-gradient(circle at top left, #0f0c29, #302b63, #24243e);
+  color: #e0e0f8;
+  min-height: 100vh;
+  overflow-x: hidden;
+  transition: background 1s ease-in-out;
+}
+
+.resume {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
+  border-left: 8px solid #00c3ff;
+  border-radius: 16px;
+  animation: fadeIn 1.2s ease;
+  transition: all 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.profile-img {
+  width: 150px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.4);
+  transition: transform 0.5s ease;
+}
+
+.profile-img:hover {
+  transform: scale(1.05);
+}
+
+.name-title h1 {
+  margin: 0;
+  font-size: 2.5em;
+  color: #00c3ff;
+}
+
+.name-title p {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #c0cfff;
+}
+
+section {
+  margin-bottom: 30px;
+  transition: all 0.4s ease;
+}
+
+h2 {
+  color: #00c3ff;
+  border-bottom: 1px solid #00c3ff;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.experience h3,
+.education li strong {
+  color: #79f8ff;
+}
+
+.experience span {
+  float: right;
+  color: #aaa;
+}
+
+.skills ul,
+.education ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.skills li,
+.education li {
+  background: rgba(0, 195, 255, 0.1);
+  margin: 5px 0;
+  padding: 8px 12px;
+  border-left: 4px solid #00c3ff;
+  transition: background 0.3s ease;
+}
+
+.skills li:hover,
+.education li:hover {
+  background: rgba(0, 195, 255, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .resume {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .name-title h1 {
+    font-size: 2em;
+  }
+
+  .name-title p {
+    font-size: 1em;
+  }
+
+  .experience span {
+    display: block;
+    float: none;
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .resume {
+    padding: 15px;
+  }
+
+  .name-title h1 {
+    font-size: 1.6em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  section {
+    margin-bottom: 20px;
+  }
+
+  .skills li,
+  .education li {
+    font-size: 0.95em;
+    padding: 6px 10px;
+  }
+}

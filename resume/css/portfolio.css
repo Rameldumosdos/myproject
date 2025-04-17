@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: radial-gradient(circle at top left, #0f0c29, #302b63, #24243e);
+  color: #f1f1f1;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 90vw;
+  margin: auto;
+  padding: 2rem 0; /* Removed left and right padding */
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 0; /* Removed horizontal padding */
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #00c3ff;
+  margin-bottom: 10px;
+}
+
+.hero h1 span {
+  color: #ffffff;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #ddd;
+  margin-bottom: 20px;
+}
+
+.cta-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #00c3ff;
+  color: #000;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.cta-btn:hover {
+  background: #00a8d6;
+}
+
+.projects,
+#skills {
+  padding: 60px 0; /* Removed horizontal padding */
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(4px);
+}
+
+.projects h2,
+#skills h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: #00c3ff;
+}
+
+.project-grid,
+.skill-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.project-card,
+.skill-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-left: 4px solid #00c3ff;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.project-card:hover,
+.skill-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card h3,
+.skill-card h3 {
+  font-size: 1.8rem;
+  color: #00c3ff;
+  margin-bottom: 15px;
+}
+
+.project-card p,
+.skill-card p {
+  font-size: 1rem;
+  color: #ddd;
+  line-height: 1.6;
+}
+
+.footer {
+  text-align: center;
+  padding: 40px 0; /* Removed horizontal padding */
+  background: #0f0c29;
+  color: #ccc;
+}
+
+.footer-btn {
+  display: inline-block;
+  margin: 15px 0;
+  padding: 12px 24px;
+  background: #00c3ff;
+  color: #000;
+  font-weight: 600;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.footer-btn:hover {
+  background: #00a8d6;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .projects h2,
+  #skills h2 {
+    font-size: 1.6rem;
+  }
+
+  .project-card h3,
+  .skill-card h3 {
+    font-size: 1.6rem;
+  }
+
+  .project-card p,
+  .skill-card p {
+    font-size: 0.9rem;
+  }
+
+  .project-grid,
+  .skill-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .projects h2,
+  #skills h2 {
+    font-size: 1.6rem;
+  }
+
+  .project-grid,
+  .skill-grid {
+    grid-template-columns: 1fr;
+  }
+}
