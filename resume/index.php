@@ -10,7 +10,7 @@
   <div class="resume">
       <header>
       <div class="header-content">
-        <img src="ram.jpg" alt="Ramel Dumosdos" class="profile-img" />
+        <img src="images/ram.jpg" alt="Ramel Dumosdos" class="profile-img" />
         <div class="name-title">
           <h1><span>RAMEL DUMOSDOS</span></h1>
           <p>FULL STACK DEVELOPER</p>
