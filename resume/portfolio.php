@@ -6,11 +6,11 @@
   <title>Ramel Dumosdos - Portfolio</title>
   
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="portfolio.css"/>
+  <link rel="stylesheet" href="css/portfolio.css"/>
 
   <!-- Favicon -->
-  <link rel="icon" href="rld.png" type="image/png" sizes="32x32">
-  <link rel="shortcut icon" href="rld.png" type="image/png">
+  <link rel="icon" href="images/rld.png" type="image/png" sizes="32x32">
+  <link rel="shortcut icon" href="images/rld.png" type="image/png">
 </head>
 <body>
   <header class="hero">
